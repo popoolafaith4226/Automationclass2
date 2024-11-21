@@ -4,10 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-#initializing the browser
+# initializing the browser
 driver = webdriver.Chrome()
 
-#launching the url
+# launching the url
 driver.get("https://www.saucedemo.com/v1/")
 
 #expanding the browser
@@ -25,43 +25,43 @@ click_login_button.click()
 
 time.sleep(5)
 
-#Add items to cart
+# Add items to cart
 add_to_cart = driver.find_element(By.XPATH, "//*[@id='inventory_container']/div/div[1]/div[3]/button")
 add_to_cart.click()
 
-#Add second item to cart
+# Add second item to cart
 add_to_cart = driver.find_element(By.XPATH, "//*[@id='inventory_container']/div/div[2]/div[3]/button")
 add_to_cart.click()
 
-#Add third item to cart
+# Add third item to cart
 add_to_cart = driver.find_element(By.XPATH, "//*[@id='inventory_container']/div/div[3]/div[3]/button")
 add_to_cart.click()
 
-#add fourth item to card
+# add fourth item to card
 add_to_cart = driver.find_element(By.XPATH,"//*[@id='inventory_container']/div/div[4]/div[3]/button")
 add_to_cart.click()
 
-#add fifth item to cart
+# add fifth item to cart
 add_to_cart = driver.find_element(By.XPATH, "//*[@id='inventory_container']/div/div[5]/div[3]/button")
 add_to_cart.click()
 
-#add sixth item to cart
+# add sixth item to cart
 add_to_cart = driver.find_element(By.XPATH, "//*[@id='inventory_container']/div/div[6]/div[3]/button")
 add_to_cart.click()
 
 
-#click on the shopping cart
+# click on the shopping cart
 shopping_cart = driver.find_element(By.ID, "shopping_cart_container")
 shopping_cart.click()
 
 time.sleep(5)
 
-#click the checkout button
+# click the checkout button
 checkout_button = driver.find_element(By.XPATH, "//*[@id='cart_contents_container']/div/div[2]/a[2]")
 checkout_button.click()
 
 
-#checkout Information
+# checkout Information
 
 first_name = driver.find_element(By.ID, "first-name")
 first_name.send_keys("Faith")
